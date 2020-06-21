@@ -41,7 +41,7 @@ public class RiversDAO {
 	}
 	public List<Flow> getFlows (River river){
 		
-		final String sql = "SELECT  day, flow, FROM flow WHERE river=? ";
+		final String sql = "SELECT id, day, flow, FROM flow WHERE river=? ";
 		List<Flow> flows = new ArrayList<Flow>();
 		
 		try {
