@@ -43,10 +43,8 @@ public class Model {
 	public double getFMed(River river) {
 		double avg = 0.0;
 		
-		for(Flow f : river.getFlows()) {
+		for(Flow f : river.getFlows()) 
 			avg += f.getFlow();
-			
-		}
 		avg/=river.getFlows().size();
 		river.setFlowAvg(avg);
 		return avg;
